@@ -245,7 +245,7 @@ textarea
 							<!-- Register Page popup -->
 									<div id="new" class="modal" style="background-color: rgba(0,0,0,0);">
 
-										<form class="modal-content animate" action="action_page.php" style="width:45%">
+										<form class="modal-content animate" action="checkRegister.php" style="width:45%">
   								  			<div class="imgcontainer" >
   								  				<div style="display:inline-block; width:100%;">
 		    							 		 		<h3>YOU ARE WELCOME</h3>
@@ -258,15 +258,17 @@ textarea
  							  				<div class="container">
 		 	   										 <label><b>Full name</b></label>
 		 	   										 <div style="display:inline-block; width:100%;">
-				     										 <input style=" width:45%; margin-right:1%;" type="text" placeholder="Enter First Name" name="first" required>
-				     										 <input style="float:right; width:54%;" type="text" placeholder="Enter Last Name" name="last" required>
+				     										 <input style=" width:45%; margin-right:1%;" type="text" placeholder="Enter First Name" name="fname" required>
+				     										 <input style="float:right; width:54%;" type="text" placeholder="Enter Last Name" name="lname" required>
 				     								 </div>
-				    							 			 <label><b>Email</b></label>
+				    							 			 <label><b>Username</b></label>
+				     										 <input type="text" placeholder="Enter Username" name="username" required>
+														 <label><b>Email</b></label>
 				     										 <input type="text" placeholder="Enter Email" name="email" required>
 				     										 <label><b>Password</b></label>
 				     										 <input type="password" placeholder="Enter Password" name="password" required>
 				     										 <label><b>Confirm Password</b></label>
-				     										 <input type="password" placeholder="Enter Confirm-Password" name="Comfirm" required>
+				     										 <input type="password" placeholder="Enter Confirm-Password" name="conpassword" required>
 				        									 <button type="submit">Register</button>
 		        									 
    											</div>	
