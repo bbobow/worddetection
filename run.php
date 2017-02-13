@@ -10,7 +10,7 @@
 	$result = $segment->get_segment_array($text_to_segment);
 	$rude_word = $segment->get_rude_word($result);
 
-	$mArray  = array('full_text' => $result,'rudeword' => $rude_word );
+	
 	//echo implode(' | ', $result);
 //	echo '<br/>';
 								
@@ -31,6 +31,6 @@
 	}
 	//echo '<br/><b>คำหยาบที่พบ:</b> ';
 	//echo implode(' | ', (array)$rude_word); 
-
+	$mArray  = array('full_text' => $result,'rudeword' => $rude_word, 'time' => round($time,4) );
 	echo json_encode($mArray,JSON_UNESCAPED_UNICODE );
 ?> 
